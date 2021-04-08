@@ -1,0 +1,27 @@
+PODS:
+  - EaseFlex (0.1.0):
+    - YogaKit (~> 1.7)
+  - Yoga (1.14.0)
+  - YogaKit (1.18.1):
+    - Yoga (~> 1.14)
+
+DEPENDENCIES:
+  - EaseFlex (from `../`)
+
+SPEC REPOS:
+  trunk:
+    - Yoga
+    - YogaKit
+
+EXTERNAL SOURCES:
+  EaseFlex:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  EaseFlex: 5183d051246c522746c96a159fa2bc266704cf5b
+  Yoga: cff67a400f6b74dc38eb0bad4f156673d9aa980c
+  YogaKit: f782866e155069a2cca2517aafea43200b01fd5a
+
+PODFILE CHECKSUM: 763509697a5921a007d0dd1159551716bbd627a0
+
+COCOAPODS: 1.9.3

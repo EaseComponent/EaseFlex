@@ -39,7 +39,7 @@
 /* Begin PBXFileReference section */
 		1E53E9F554D6B84EC601108D /* Pods-EaseFlex_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseFlex_Example.release.xcconfig"; path = "Target Support Files/Pods-EaseFlex_Example/Pods-EaseFlex_Example.release.xcconfig"; sourceTree = "<group>"; };
 		4D01647060DF0E504A5056E2 /* Pods-EaseFlex_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseFlex_Tests.debug.xcconfig"; path = "Target Support Files/Pods-EaseFlex_Tests/Pods-EaseFlex_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		4F9C8A4FADD22386EA59FCA0 /* EaseFlex.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = EaseFlex.podspec; path = ../EaseFlex.podspec; sourceTree = "<group>"; };
+		4F9C8A4FADD22386EA59FCA0 /* EaseFlex.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = EaseFlex.podspec; path = ../EaseFlex.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		6003F58A195388D20070C39A /* EaseFlex_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EaseFlex_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6003F58D195388D20070C39A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		6003F58F195388D20070C39A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -63,9 +63,9 @@
 		737300F5108B2BC3A11CBD44 /* Pods_EaseFlex_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EaseFlex_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		AD346AE1D9C6AFC91328CE24 /* Pods_EaseFlex_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EaseFlex_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		BEA98F544A9A410080F6AEB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BEA98F544A9A410080F6AEB3 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C69CF7A1DEB98A3BAA425CAF /* Pods-EaseFlex_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseFlex_Tests.release.xcconfig"; path = "Target Support Files/Pods-EaseFlex_Tests/Pods-EaseFlex_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		D7C4141952385C8F1E861D28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		D7C4141952385C8F1E861D28 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		EAB75309F2D9E6C4D1269CD9 /* Pods-EaseFlex_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EaseFlex_Example.debug.xcconfig"; path = "Target Support Files/Pods-EaseFlex_Example/Pods-EaseFlex_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -193,7 +193,6 @@
 				4D01647060DF0E504A5056E2 /* Pods-EaseFlex_Tests.debug.xcconfig */,
 				C69CF7A1DEB98A3BAA425CAF /* Pods-EaseFlex_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -325,10 +325,14 @@
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-EaseFlex_Example/Pods-EaseFlex_Example-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/EaseFlex/EaseFlex.framework",
+				"${BUILT_PRODUCTS_DIR}/Yoga/yoga.framework",
+				"${BUILT_PRODUCTS_DIR}/YogaKit/YogaKit.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/EaseFlex.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/yoga.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/YogaKit.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;

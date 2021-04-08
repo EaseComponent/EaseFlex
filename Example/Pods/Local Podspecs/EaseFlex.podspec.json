@@ -1,0 +1,27 @@
+{
+  "name": "EaseFlex",
+  "version": "0.1.0",
+  "summary": "使用 EaseFlex 对Facebook的 Yoga 布局框架进行封装",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/EaseComponent/EaseFlex",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "Yrocky": "983272765@qq.com"
+  },
+  "source": {
+    "git": "https://github.com/EaseComponent/EaseFlex.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "EaseFlex/Classes/**/*",
+  "dependencies": {
+    "YogaKit": [
+      "~> 1.7"
+    ]
+  }
+}

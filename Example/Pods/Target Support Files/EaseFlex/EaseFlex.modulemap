@@ -1,0 +1,6 @@
+framework module EaseFlex {
+  umbrella header "EaseFlex-umbrella.h"
+
+  export *
+  module * { export * }
+}
